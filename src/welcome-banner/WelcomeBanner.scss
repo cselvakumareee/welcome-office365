@@ -1,0 +1,31 @@
+.welcomebanner-wrapper{
+
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    .welcomebanner-block{
+        width: 1200px;
+       // display: flex;
+        // justify-content: center;
+        // align-items: flex-start;
+        .headline{
+           display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .heading1{
+            font-size: 18px;
+            padding-left: 5px;
+        }
+        
+    }
+}
+
+@media (max-width: 768px){
+    .welcomebanner-wrapper{
+        .welcomebanner-block{
+            width: 100%;
+        }
+    }
+  }

@@ -1,0 +1,32 @@
+.navbar-wrapper{
+
+    width: 100%;
+    background-color: #231f20;
+    display: flex;
+    justify-content: center;
+    .navbar-block{
+        width: 1200px;
+        height: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #ffffff;
+        span{
+            //height: 20px;
+            //padding: 0px 20px;
+            text-transform: uppercase;
+            &:hover{
+                background-color: #4b4949;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .navbar-wrapper{
+        display: none;
+        .navbar-block{
+            width: 100%;
+        }
+    }
+  }
