@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const marks = [
-  
   {
     value: 20,
     label: "Select a plan",
@@ -23,26 +22,24 @@ const marks = [
     value: 70,
     label: "Add Number of Licenses",
   },
-  
 ];
 
 function valuetext(value: number) {
   return `${value}`;
 }
 
-
-export default function MaterialSlider(){
-    const classes = useStyles();
-    return(
-        <div className={classes.root}>
-            <Slider
-              defaultValue={20}
-              getAriaValueText={valuetext}
-              aria-labelledby="discrete-slider-custom"
-              step={10}
-              valueLabelDisplay="auto"
-              marks={marks}
-            />
-          </div>
-    );
+export default function MaterialSlider() {
+  const classes = useStyles();
+  return (
+    <div className={classes.root}>
+      <Slider
+        defaultValue={20}
+        getAriaValueText={valuetext}
+        aria-labelledby="discrete-slider-custom"
+        step={10}
+        valueLabelDisplay="auto"
+        marks={marks}
+      />
+    </div>
+  );
 }

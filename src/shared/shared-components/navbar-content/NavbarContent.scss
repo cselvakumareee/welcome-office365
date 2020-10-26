@@ -1,0 +1,19 @@
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.navbar-contents{
+    text-transform: uppercase;
+    &:hover{
+        background-color: #4b4949;
+    }
+}
+
+@media (min-width: 769px){
+    .navbar-contents{
+        display: none;
+    }
+}

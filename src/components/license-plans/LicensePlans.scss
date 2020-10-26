@@ -1,0 +1,98 @@
+.licenseplans-wrapper {
+  width: 100%;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  .licenseplans-block {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    .slider-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .plan-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      border-top: 3px solid orangered;
+      margin-bottom: 50px;
+      .inner-plan-container {
+        width: 33.33%;
+        height: 650px;
+        background-color: #ffffff;
+        border: 1px solid #d3d2d2;
+        .heading-block {
+          background-color: #363434;
+          color: #ffffff;
+          padding: 8px 20px;
+          text-align: start;
+          font-weight: bold;
+        }
+        .pricing-block {
+          background-color: #231f20;
+          color: goldenrod;
+          padding: 16px 20px;
+          text-align: start;
+          .first-child {
+            font-size: 22px;
+          }
+          .second-child {
+            font-size: 14px;
+          }
+        }
+        .content-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          text-align: start;
+          padding: 20px;
+          height: 78%;
+          .content-block1 {
+            padding-bottom: 10px;
+            .block1 {
+              display: block;
+              font-weight: bold;
+            }
+            .add-padding-space {
+              padding: 0px 5px;
+            }
+            .add-flex-alignment {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+            }
+          }
+          .add-flex-align-margin-space {
+            margin-bottom: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+// For mobile & Tablet devices
+@media (max-width: 768px) {
+  .licenseplans-wrapper {
+    .licenseplans-block {
+      width: 100%;
+      .plan-container {
+        display: block;
+        .inner-plan-container {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// For small screen devices
+@media (min-width: 769px) and (max-width: 1440px) {
+  .licenseplans-wrapper {
+    .licenseplans-block {
+      width: 85%;
+    }
+  }
+}

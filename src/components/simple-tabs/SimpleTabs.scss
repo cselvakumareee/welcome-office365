@@ -1,0 +1,67 @@
+.simpletabs-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  .simpletabs-block {
+    width: 1200px;
+    .tab-heading {
+      text-align: center;
+    }
+    .text-container {
+      display: flex;
+      flex: 1;
+      .inner-text-container {
+        height: 500px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      .add-text-alignment {
+        text-align: start;
+      }
+      .add-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .addon-reduce-height {
+        height: 400px;
+      }
+    }
+  }
+}
+
+// For mobile & Tablet devices
+@media (max-width: 768px) {
+  .simpletabs-wrapper {
+    .simpletabs-block {
+      width: 100%;
+      .tab-wrapper {
+        display: none;
+      }
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        .inner-text-container {
+          height: 100%;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .addon-reduce-height {
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+// For small screen devices
+@media (min-width: 769px) and (max-width: 1440px) {
+  .simpletabs-wrapper {
+    .simpletabs-block {
+      width: 85%;
+    }
+  }
+}
