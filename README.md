@@ -1,3 +1,12 @@
+Hi,
+This project build in react tsx. 
+
+# Steps to run project:
+1. Clone the git repo
+2. open in visual studio code.
+3. open terminal give npm install, It will install all node modules and dependencies.
+4. To run project. give npm  start in terminal.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
